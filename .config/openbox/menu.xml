@@ -2,7 +2,7 @@
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
-<menu id="apps-editors-menu" label="Editors">
+<menu id="apps-developer-menu" label="Developer">
   <item label="Geany">
     <action name="Execute">
       <command>geany</command>
@@ -11,6 +11,26 @@
       </startupnotify>
     </action>
   </item>
+
+  <item label="Astah">
+    <action name="Execute">
+      <command>astah</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+
+  <item label="ArgoUML">
+    <action name="Execute">
+      <command>argouml</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+
+
 </menu>
 
 <menu id="apps-term-menu" label="Terminals">
@@ -29,10 +49,30 @@
 <menu id="apps-net-menu" label="Internet">
   <item label="Firefox">
     <action name="Execute">
-      <command>firefox</command>
+      <command>firefox --private</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+
+  <item label="Epiphany">
+    <action name="Execute">
+      <command>epiphany -i</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Epiphany</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+
+  <item label="Transmission">
+    <action name="Execute">
+      <command>transmission-gtk</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Transmission</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -100,6 +140,25 @@
   </item>
 </menu>
 
+<menu id="study-menu" label="Study">
+  <item label="Freemind">
+    <action name="Execute">
+      <command>freemind</command>
+    </action>
+  </item>
+  <item label="Freeplane">
+    <action name="Execute">
+      <command>freeplane</command>
+    </action>
+  </item>
+  <item label="Mendeley">
+    <action name="Execute">
+      <command>mendeleydesktop</command>
+    </action>
+  </item>
+
+</menu>
+
 <menu id="system-menu" label="System">
   <item label="Openbox Configuration Manager">
     <action name="Execute">
@@ -156,6 +215,8 @@
   <menu id="apps-multimedia-menu"/>
   <menu id="apps-term-menu"/>
   <menu id="apps-fileman-menu"/>
+  <menu id="apps-developer-menu"/>
+	<menu id="study-menu"/>
   <separator />
 	<menu id="exit-menu"/>
   <menu id="system-menu"/>

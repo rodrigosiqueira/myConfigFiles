@@ -120,12 +120,14 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>workTerminal</name>
-      <name>browser</name>
-      <name>(Unnamed desktop)</name>
+      <name>WorkTerminal</name>
+      <name>Browser</name>
+      <name>FileManager</name>
+      <name>GraphicalApplications</name>
+      <name>Others</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -263,9 +265,9 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-		<keybind key="W-Return">
-			<action name="ToggleMaximizeFull"/>
-		</keybind>
+    <keybind key="W-Return">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -318,18 +320,18 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <!-- xterm -->
+    <!-- lxterminal -->
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
+          <maximized>true</maximized>
           <name>lxterminal</name>
         </startupnotify>
         <command>lxterminal</command>
       </action>
     </keybind>
-
-		<!-- Exit openbox -->
+    <!-- Exit openbox -->
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -339,7 +341,6 @@
         <command>openbox --exit</command>
       </action>
     </keybind>
-
     <!-- lock window -->
     <keybind key="W-l">
       <action name="Execute">
@@ -351,13 +352,32 @@
       </action>
     </keybind>
     <!-- Firefox -->
+    <keybind key="W-b">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Epiphany</name>
+        </startupnotify>
+        <command>epiphany -i</command>
+      </action>
+    </keybind>
+    <!-- Thunar -->
     <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Firefox</name>
+          <name>Thunar</name>
         </startupnotify>
-        <command>firefox</command>
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Alsamixer</name>
+        </startupnotify>
+        <command>xterm alsamixer</command>
       </action>
     </keybind>
   </keyboard>

@@ -19,3 +19,4 @@ setxkbmap br &
 tint2 &
 wicd-gtk --tray &
 volumeicon &
+lxterminal &
