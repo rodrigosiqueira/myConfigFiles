@@ -740,7 +740,6 @@
     <manageDesktops>yes</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
-
   <applications>
     <application name="lxterminal">
       <decor>yes</decor>

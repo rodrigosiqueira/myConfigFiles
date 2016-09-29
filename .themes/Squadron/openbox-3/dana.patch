@@ -1,0 +1,14 @@
+80,82c80,81
+< window.active.button.toggled.bg: flat vertical gradient
+< window.active.button.toggled.bg.color: #c6d5c0
+< window.active.button.toggled.bg.colorTo: #8b9687
+---
+> window.active.button.toggled.bg: flat solid border
+> window.active.button.toggled.bg.color: #444400
+85,87c84,85
+< window.inactive.button.toggled.bg: flat vertical gradient
+< window.inactive.button.toggled.bg.color: #d6d6d6
+< window.inactive.button.toggled.bg.colorTo: #9a9a9a
+---
+> window.inactive.button.toggled.bg: flat solid border
+> window.inactive.button.toggled.bg.color: #777744
