@@ -1,0 +1,51 @@
+---
+- name: Update package list
+  package: update_cache=yes
+
+- name: Create configure folder
+  file: path=/home/siqueira/ state=directory mode=0755
+
+- name: Install xorg-xinit
+  pacman: name=xorg-xinit state=latest
+
+- name: Install wicd
+  pacman: name=wicd state=latest
+
+- name: Install wicd-gtk
+  pacman: name=wicd-gtk state=latest
+
+- name: Install lxterminal
+  pacman: name=lxterminal state=latest
+
+- name: Install rsync
+  pacman: name=rsync state=latest
+
+- name: Install transmission-gtk
+  pacman: name=transmission-gtk state=latest
+
+- name: Install xterm
+  pacman: name=xterm state=latest
+
+- name: Install firefox
+  pacman: name=firefox state=latest
+
+- name: Install alsa-utils
+  pacman: name=alsa-utils state=latest
+
+- name: Install vlc
+  pacman: name=vlc state=latest
+
+- name: Install curl
+  pacman: name=curl state=latest
+
+- name: Install mpg123
+  pacman: name=mpg123 state=latest
+
+- name: Install screen
+  pacman: name=screen state=latest
+
+- name: Install youtube-dl
+  pacman: name=youtube-dl state=latest
+
+- name: Install libcdio
+  pacman: name=libcdio state=latest
