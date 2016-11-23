@@ -1,0 +1,9 @@
+---
+- name: Install Openbox
+  pacman: name=openbox state=latest
+
+- name: Install obconf
+  pacman: name=obconf state=latest
+
+- name: Basic openbox configure files
+  synchronize: src=files/ dest=/home/siqueira/.config
