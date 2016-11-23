@@ -1,0 +1,13 @@
+---
+- name: Install Gimp
+  pacman: name=gimp state=latest
+
+- name: Install Inkscape
+  pacman: name=inkscape state=latest
+
+- name: Install Blender
+  pacman: name=blender state=latest
+
+- name: Install FreeCAD
+  pacman: name=freecad state=latest
+
