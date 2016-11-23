@@ -1,0 +1,4 @@
+---
+- name: Install latex
+  pacman: name=latex state=latest
+
