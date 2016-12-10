@@ -12,6 +12,15 @@
     </action>
   </item>
 
+  <item label="Mysql-workbench">
+    <action name="Execute">
+      <command>mysql-workbench</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+
   <item label="Astah">
     <action name="Execute">
       <command>astah</command>
@@ -36,13 +45,14 @@
 <menu id="apps-term-menu" label="Terminals">
   <item label="Xterm">
     <action name="Execute">
-			<command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10'</command>
-		</action>
+      <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10'</command>
+    </action>
   </item>
   <item label="Lxterminal">
+    <decor>no</decor>
     <action name="Execute">
-			<command>lxterminal</command>
-		</action>
+      <command>lxterminal</command>
+    </action>
   </item>
 </menu>
 
@@ -57,12 +67,22 @@
     </action>
   </item>
 
-  <item label="Epiphany">
+  <item label="Chromium">
     <action name="Execute">
-      <command>epiphany -i</command>
+      <command>chromium --incognito</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Epiphany</wmclass>
+        <wmclass>Chromium</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+
+  <item label="Skype">
+    <action name="Execute">
+      <command>skypeforlinux</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Skype</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -173,37 +193,37 @@
 </menu>
 
 <menu id="exit-menu" label="Exit">
-	<item label="Lock">
-		<action name="Execute">
-			<command>i3lock</command>
-		</action>
-	</item>
+  <item label="Lock">
+    <action name="Execute">
+      <command>i3lock</command>
+    </action>
+  </item>
 
-	<item label="Log Out">
-		<action name="Execute">
-			<command>openbox --exit</command>
-		</action>
-	</item>
-	<item label="Shutdown">
-		<action name="Execute">
-			<command>systemctl poweroff</command>
-		</action>
-	</item>
-	<item label="Restart">
-		<action name="Execute">
-			<command>systemctl reboot</command>
-		</action>
-	</item>
-	<item label="Suspend">
-		<action name="Execute">
-			<command>systemctl suspend</command>
-		</action>
-	</item>
-	<item label="Hibernate">
-		<action name="Execute">
-			<command>systemctl hibernate</command>
-		</action>
-	</item>
+  <item label="Log Out">
+    <action name="Execute">
+      <command>openbox --exit</command>
+    </action>
+  </item>
+  <item label="Shutdown">
+    <action name="Execute">
+      <command>systemctl poweroff</command>
+    </action>
+  </item>
+  <item label="Restart">
+    <action name="Execute">
+      <command>systemctl reboot</command>
+    </action>
+  </item>
+  <item label="Suspend">
+    <action name="Execute">
+      <command>systemctl suspend</command>
+    </action>
+  </item>
+  <item label="Hibernate">
+    <action name="Execute">
+      <command>systemctl hibernate</command>
+    </action>
+  </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
@@ -216,9 +236,9 @@
   <menu id="apps-term-menu"/>
   <menu id="apps-fileman-menu"/>
   <menu id="apps-developer-menu"/>
-	<menu id="study-menu"/>
+  <menu id="study-menu"/>
   <separator />
-	<menu id="exit-menu"/>
+  <menu id="exit-menu"/>
   <menu id="system-menu"/>
   </menu>
 

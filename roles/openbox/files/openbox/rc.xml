@@ -356,9 +356,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Epiphany</name>
+          <name>Firefox</name>
         </startupnotify>
-        <command>epiphany -i</command>
+        <command>firefox --private</command>
       </action>
     </keybind>
     <!-- Thunar -->
@@ -742,7 +742,7 @@
   </menu>
   <applications>
     <application name="lxterminal">
-      <decor>yes</decor>
+      <decor>no</decor>
       <shade>yes</shade>
       <maximized>yes</maximized>
     </application>
