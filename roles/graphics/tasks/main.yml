@@ -11,3 +11,5 @@
 - name: Install FreeCAD
   pacman: name=freecad state=latest
 
+- name: Install Imagemagick
+  pacman: name=imagemagick state=latest
