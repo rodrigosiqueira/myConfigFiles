@@ -1,0 +1,2 @@
+- name: My bash config file
+  synchronize: src=files/ dest=/home/siqueira/
