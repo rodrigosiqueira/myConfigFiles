@@ -1,4 +1,6 @@
 ---
-- name: Install latex
-  pacman: name=latex state=latest
+- name: Install latex-most (TeX Live applications)
+  pacman: name=texlive-most state=latest
 
+- name: Install latex-lang (character sets and non-English features)
+  pacman: name=texlive-lang state=latest
