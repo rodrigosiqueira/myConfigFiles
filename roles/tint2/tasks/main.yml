@@ -1,0 +1,7 @@
+---
+- name: Install tint2
+  pacman: name=tint2 state=latest
+
+
+- name: Copy tint2 config files
+  synchronize: src=files/ dest=/home/siqueira/.config

@@ -1,0 +1,3 @@
+---
+- name: Copy all fonts and themes
+  synchronize: src=files/ dest=/home/siqueira/

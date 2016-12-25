@@ -1,0 +1,6 @@
+---
+- name: Install orage
+  pacman: name=orage state=latest
+
+- name: My bash config file
+  synchronize: src=files/ dest=/home/siqueira/.config/orage/

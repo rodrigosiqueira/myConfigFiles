@@ -1,0 +1,9 @@
+---
+- name: Install Thunar
+  pacman: name=thunar state=latest
+
+- name: Install Tumbler (thumbnails)
+  pacman: name=tumbler state=latest
+
+- name: Copy all thunar files
+  synchronize: src=files/ dest=/home/siqueira/.config/
