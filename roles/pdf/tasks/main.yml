@@ -3,4 +3,4 @@
   pacman: name=gv state=latest
 
 - name: Install okular
-  pacman: name=kdegraphics-okular state=latest
+  pacman: name=okular state=latest
