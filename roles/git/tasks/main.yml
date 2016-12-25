@@ -1,0 +1,3 @@
+---
+- name: Git information on terminal
+  synchronize: src=files/ dest=/home/siqueira/.config/
