@@ -10,3 +10,17 @@
                                     
 
 ```
+
+# How to deploy locally
+
+> First time, execute:
+
+```
+sudo make
+```
+
+> Just run:
+
+```
+sudo ansible-playbook atma.yml --connection=local
+```
