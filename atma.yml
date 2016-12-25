@@ -3,3 +3,15 @@
   connection: local
   roles:
     - common
+    - bash
+    - basic_developer
+    - graphics
+    - openbox
+    - git
+    - theme_font
+    - thunar
+    - tint2
+    - pdf
+    - orage
+    - latex
+    - media
