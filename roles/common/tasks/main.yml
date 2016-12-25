@@ -32,20 +32,20 @@
 - name: Install alsa-utils
   pacman: name=alsa-utils state=latest
 
-- name: Install vlc
-  pacman: name=vlc state=latest
-
 - name: Install curl
   pacman: name=curl state=latest
-
-- name: Install mpg123
-  pacman: name=mpg123 state=latest
 
 - name: Install screen
   pacman: name=screen state=latest
 
-- name: Install youtube-dl
-  pacman: name=youtube-dl state=latest
-
 - name: Install libcdio
   pacman: name=libcdio state=latest
+
+- name: Install reshift
+  pacman: name=redshift state=latest
+
+- name: Install feh (image)
+  pacman: name=feh state=latest
+
+- name: My default background
+  synchronize: src=files/space_invader.png dest=/home/siqueira/.config/
