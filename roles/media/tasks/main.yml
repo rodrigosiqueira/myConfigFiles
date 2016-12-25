@@ -1,0 +1,11 @@
+---
+- name: Install mpg123 (my favorite music player)
+  pacman: name=mpg123 state=latest
+
+- name: Install vlc (Video player)
+  pacman: name=vlc state=latest
+
+- name: Install youtube-dl (Download youtube videos)
+  pacman: name=youtube-dl state=latest
+
+
