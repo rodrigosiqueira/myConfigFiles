@@ -1,0 +1,12 @@
+---
+- name: Qemu
+  pacman: name=qemu state=latest
+
+- name: Samba (share folder with qemu)
+  pacman: name=samba state=latest
+
+- name: Libvirt
+  pacman: name=libvirt state=latest
+
+- name: Managing virtual machine
+  pacman: name=virt-manager state=latest
