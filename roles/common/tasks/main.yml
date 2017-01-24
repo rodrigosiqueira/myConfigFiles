@@ -47,5 +47,23 @@
 - name: Install feh (image)
   pacman: name=feh state=latest
 
+- name: Basic tools for devel
+  pacman: name=base-devel state=latest
+
+- name: Convert xml to many formats
+  pacman: name=xmlto state=latest
+
+- name: Docbook
+  pacman: name=docbook-xsl state=latest
+
+- name: Kernel modules handler
+  pacman: name=kmod state=latest
+
+- name: Inet utils
+  pacman: name=inetutils state=latest
+
+- name: Terminal calculator
+  pacman: name=bc state=latest
+
 - name: My default background
   synchronize: src=files/space_invader.png dest=/home/siqueira/.config/
