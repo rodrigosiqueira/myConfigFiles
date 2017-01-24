@@ -1,6 +1,6 @@
 ---
-- name: Update package list
-  package: update_cache=yes
+- name: Update system
+  pacman: update_cache=yes upgrade=yes
 
 - name: Create configure folder
   file: path=/home/siqueira/ state=directory mode=0755
