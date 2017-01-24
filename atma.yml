@@ -10,6 +10,7 @@
     - git
     - theme_font
     - thunar
+    - automount_external_devices
     - tint2
     - pdf
     - orage

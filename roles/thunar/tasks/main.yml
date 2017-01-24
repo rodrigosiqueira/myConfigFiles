@@ -5,5 +5,12 @@
 - name: Install Tumbler (thumbnails)
   pacman: name=tumbler state=latest
 
+- name: Install thunar-volman (Management of removeable devices)
+  pacman: name=thunar-volman state=latest
+
+- name: Install create and modify archives
+  pacman: name=file-roller state=latest
+
 - name: Copy all thunar files
   synchronize: src=files/ dest=/home/siqueira/.config/
+
