@@ -35,6 +35,9 @@
 - name: Install curl
   pacman: name=curl state=latest
 
+- name: Install wget
+  pacman: name=wget state=latest
+
 - name: Install screen
   pacman: name=screen state=latest
 
