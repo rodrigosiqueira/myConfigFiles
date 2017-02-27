@@ -320,15 +320,15 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <!-- lxterminal -->
+    <!-- xterm -->
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <maximized>true</maximized>
-          <name>lxterminal</name>
+          <name>xterm</name>
         </startupnotify>
-        <command>lxterminal</command>
+        <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10'</command>
       </action>
     </keybind>
     <!-- Exit openbox -->

@@ -8,6 +8,6 @@ setxkbmap br &
 tint2 &
 wicd-gtk --tray &
 volumeicon &
-lxterminal &
+xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10' &
 feh --bg-scale ~/.config/space_invader.png &
 redshift &
