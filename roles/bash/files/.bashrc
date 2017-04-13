@@ -8,6 +8,7 @@
 # Tools alias
 alias ls='ls --color=auto'
 alias feh='feh --scale-down'
+alias beep='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
 
 # Useful alias
 alias kernel-test='[ -d "/usr/lib/modules/$(uname -r)" ] || echo "Kernel has been updated. Please reboot."'

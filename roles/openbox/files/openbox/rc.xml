@@ -328,7 +328,7 @@
           <maximized>true</maximized>
           <name>xterm</name>
         </startupnotify>
-        <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10'</command>
+        <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10' -fullscreen</command>
       </action>
     </keybind>
     <!-- Exit openbox -->
