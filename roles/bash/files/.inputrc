@@ -1,0 +1,12 @@
+# Usually, I like to use vim for coding editing and other stuffs. However
+# I am already comfortable with emacs keymap on bash and for this reason
+# I keep using it here
+
+# Using emacs default
+set editing-mode emacs
+
+# Arrows mapping
+
+## World manipulation: Ctrl + LeftArrow and Ctrl + RightArrow
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
