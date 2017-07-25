@@ -4,6 +4,7 @@
   roles:
     - common
     - bash
+    - X
     - basic_developer
     - graphics
     - openbox

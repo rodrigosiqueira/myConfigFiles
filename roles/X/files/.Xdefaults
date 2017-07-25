@@ -1,1 +1,2 @@
 XTerm*selectToClipboard:true
+xterm*metaSendsEscape: true
