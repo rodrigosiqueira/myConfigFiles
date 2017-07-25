@@ -48,6 +48,15 @@
     </action>
   </item>
 
+  <item label="Pencil">
+    <action name="Execute">
+      <command>pencil</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+
 </menu>
 
 <menu id="apps-term-menu" label="Terminals">
@@ -120,7 +129,13 @@
       <command>vlc</command>
     </action>
   </item>
- </menu>
+
+	<item label="Audacity">
+    <action name="Execute">
+      <command>audacity</command>
+    </action>
+  </item>
+</menu>
 
 <menu id="apps-fileman-menu" label="File Managers">
    <item label="Thunar">
@@ -184,7 +199,15 @@
       <command>mendeleydesktop</command>
     </action>
   </item>
+</menu>
 
+<menu id="miscellaneous-menu" label="Miscellaneous">
+  <item label="Android file transfer">
+    <action name="Execute">
+      <command>android-file-transfer</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
 </menu>
 
 <menu id="system-menu" label="System">
@@ -245,6 +268,7 @@
   <menu id="apps-fileman-menu"/>
   <menu id="apps-developer-menu"/>
   <menu id="study-menu"/>
+	<menu id="miscellaneous-menu"/>
   <separator />
   <menu id="exit-menu"/>
   <menu id="system-menu"/>
