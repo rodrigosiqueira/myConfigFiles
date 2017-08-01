@@ -26,7 +26,11 @@ PS1='[$?,\j]\[\e[0;32m\]\u@\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] '
 PS1+='\[\e[1;32m\]\[\e[0;33m\]$(__git_ps1 "[%s]")\n\[\e[1;32m\]'
 PS1+='\$\[\e[m\] \[\e[0;37m\]'
 
-#VGA screen
+# VGA screen
 alias expand-to-vga="xrandr --output VGA-0 --auto --right-of LVDS-0"
 alias mirror-to-vga="xrandr --output VGA-0 --auto --same-as LVDS-0"
 alias vga-off="xrandr --output VGA-0 --off"
+
+# Miscellaneous export variables
+export HISTTIMEFORMAT='%F %T '
+export HISTCONTROL=erasedups
