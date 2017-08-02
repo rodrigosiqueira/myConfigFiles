@@ -14,5 +14,6 @@
 - name: Install thunar-volman (Management of removeable devices)
   pacman: name=ntfs-3g state=latest
 
-- name: Copy udev rules
-  synchronize: src=files/99-udisks2.rules dest=/etc/udev/rules.d/
+# Usually not required
+#- name: Copy udev rules
+#  synchronize: src=files/99-udisks2.rules dest=/etc/udev/rules.d/
