@@ -17,7 +17,7 @@
     - tint2
     - pdf
     - orage
-    - latex
+#    - latex
     - media
     - sdl2
     - virtualization

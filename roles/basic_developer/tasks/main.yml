@@ -2,5 +2,5 @@
 - name: Install geany
   pacman: name=geany state=latest
 
-- name: Install MySql Workbench
-  pacman: name=mysql-workbench state=latest
+#- name: Install MySql Workbench
+#  pacman: name=mysql-workbench state=latest
