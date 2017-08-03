@@ -10,4 +10,3 @@
 
 - name: Install SDL2 mixer
   pacman: name=sdl2_mixer state=latest
-

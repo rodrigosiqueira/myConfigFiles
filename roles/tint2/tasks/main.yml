@@ -3,5 +3,5 @@
   pacman: name=tint2 state=latest
 
 
-- name: Copy tint2 config files
-  synchronize: src=files/ dest=/home/siqueira/.config
+- name: Copy tint2 config files ({{ default_user }})
+  synchronize: src=files/ dest=/home/{{ default_user }}/.config

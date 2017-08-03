@@ -68,5 +68,8 @@
 - name: Terminal calculator
   pacman: name=bc state=latest
 
+- name: Fabulous Pacgraph
+  pacman: name=pacgraph state=latest
+
 - name: My default background
-  synchronize: src=files/space_invader.png dest=/home/siqueira/.config/
+  synchronize: src=files/space_invader.png dest=/home/{{ default_user }}/.config/

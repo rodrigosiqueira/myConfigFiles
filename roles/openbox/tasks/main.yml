@@ -5,5 +5,5 @@
 - name: Install obconf
   pacman: name=obconf state=latest
 
-- name: Basic openbox configure files
-  synchronize: src=files/ dest=/home/siqueira/.config
+- name: Basic openbox configure files ({{ default_user }})
+  synchronize: src=files/ dest=/home/{{ default_user }}/.config

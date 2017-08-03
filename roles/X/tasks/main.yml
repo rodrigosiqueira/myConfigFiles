@@ -1,2 +1,2 @@
 - name: My X defaults
-  synchronize: src=files/ dest=/home/siqueira/
+  synchronize: src=files/ dest=/home/{{ default_user }}/

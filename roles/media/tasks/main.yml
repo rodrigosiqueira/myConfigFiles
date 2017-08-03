@@ -7,5 +7,3 @@
 
 - name: Install youtube-dl (Download youtube videos)
   pacman: name=youtube-dl state=latest
-
-

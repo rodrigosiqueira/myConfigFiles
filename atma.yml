@@ -1,5 +1,7 @@
 ---
 - hosts: local
+  vars:
+    default_user: siqueira
   connection: local
   roles:
     - common

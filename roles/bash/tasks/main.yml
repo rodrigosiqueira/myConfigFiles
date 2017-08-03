@@ -1,2 +1,2 @@
-- name: My bash config file
-  synchronize: src=files/ dest=/home/siqueira/
+- name: My bash config file to {{ default_user }}
+  synchronize: src=files/ dest=/home/{{ default_user }}/
