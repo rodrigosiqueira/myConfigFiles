@@ -1,3 +1,3 @@
 ---
-- name: My bash config file to {{ default_user }}
+- name: My small script for create templates of some stuff
   synchronize: src=files/ dest=/home/{{ default_user }}/
