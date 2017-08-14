@@ -65,5 +65,5 @@ function beepcontrol ()
 
 function fancy-beep ()
 {
-  beepcontrol "$@" &
+  (>&2 beepcontrol "$@" &)
 }
