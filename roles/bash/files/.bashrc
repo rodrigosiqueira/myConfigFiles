@@ -18,6 +18,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Beep
 source ~/.config/beep/beep.sh
+source ~/.config/flex_template/flex_template.sh
 
 # git shell
 source ~/.config/git-prompt.sh
