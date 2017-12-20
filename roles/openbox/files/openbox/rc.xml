@@ -120,16 +120,17 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>5</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WorkTerminal</name>
+      <name>WorkTerminal 1</name>
+      <name>WorkTerminal 2</name>
       <name>Browser</name>
-      <name>FileManager</name>
-      <name>GraphicalApplications</name>
+      <name>FileManagement</name>
+      <name>Graphic Apps</name>
       <name>Others</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>795</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -260,14 +261,27 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
+
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
+
+    <keybind key="W-m">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+
+    <keybind key="W-r">
+	    <action name="Reconfigure" />
+    </keybind>
+
     <keybind key="W-Return">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -278,6 +292,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
@@ -287,6 +302,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
@@ -298,28 +314,43 @@
         </finalactions>
       </action>
     </keybind>
+
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
+
     <keybind key="W-S-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
+
     <keybind key="W-S-Up">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
+
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
     </keybind>
+
     <!-- Keybindings for running applications -->
+    <keybind key="W-w">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>wicd-gtk</name>
+        </startupnotify>
+        <command>wicd-gtk</command>
+      </action>
+    </keybind>
+
     <!-- xterm -->
     <keybind key="W-t">
       <action name="Execute">
@@ -328,9 +359,10 @@
           <maximized>true</maximized>
           <name>xterm</name>
         </startupnotify>
-        <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10' -fullscreen</command>
+        <command>xterm -u8 -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10' -fullscreen</command>
       </action>
     </keybind>
+
     <!-- Exit openbox -->
     <keybind key="W-e">
       <action name="Execute">
@@ -341,6 +373,7 @@
         <command>openbox --exit</command>
       </action>
     </keybind>
+
     <!-- lock window -->
     <keybind key="W-l">
       <action name="Execute">
@@ -351,26 +384,31 @@
         <command>i3lock -c 000000</command>
       </action>
     </keybind>
+
     <!-- Firefox -->
     <keybind key="W-b">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
+          <maximized>true</maximized>
           <name>Firefox</name>
         </startupnotify>
         <command>firefox --private</command>
       </action>
     </keybind>
+
     <!-- Thunar -->
     <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
+          <maximized>true</maximized>
           <name>Thunar</name>
         </startupnotify>
         <command>thunar</command>
       </action>
     </keybind>
+
     <keybind key="W-v">
       <action name="Execute">
         <startupnotify>
@@ -741,10 +779,10 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="lxterminal">
-      <decor>no</decor>
-      <shade>yes</shade>
-      <maximized>yes</maximized>
+    <!--
+    <application name="xterm">
+ 			<desktop>2</desktop>
     </application>
+		-->
   </applications>
 </openbox_config>

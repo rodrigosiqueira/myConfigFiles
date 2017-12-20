@@ -62,7 +62,7 @@
 <menu id="apps-term-menu" label="Terminals">
   <item label="Xterm">
     <action name="Execute">
-      <command>xterm -bg "black" -fg "white" -fa 'Hack-Regular' -fs '10' -fullscreen</command>
+      <command>xterm -bg "black" -u8 -fg "white" -fa 'Hack-Regular' -fs '10' -fullscreen</command>
     </action>
   </item>
   <item label="Lxterminal">
