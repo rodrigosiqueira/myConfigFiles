@@ -1,0 +1,6 @@
+---
+- name: My scripts
+  file: /home/{{ default_user }}/.config/my_scripts state=directory
+
+- name: My bash config file to {{ default_user }}
+  synchronize: src=files/ dest=/home/{{ default_user }}/.config/my_scripts
