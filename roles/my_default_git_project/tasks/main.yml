@@ -1,0 +1,8 @@
+---
+- name: Create Repositories dir
+  file: /home/{{ default_user }}/Repositories/ state=directory
+
+- name: fancy-beep
+  git:
+    repo: https://github.com/rodrigosiqueira/fancy-beep.git
+    dest: /home/{{ default_user }}/Repositories/
