@@ -1,2 +1,8 @@
-- name: My X defaults
-  synchronize: src=files/ dest=/home/{{ default_user }}/
+- name: My Xresources
+  synchronize: src=files/Xresources dest=/home/{{ default_user }}/.Xresources
+
+- name: My Xinitrc
+  synchronize: src=files/Xinitrc dest=/home/{{ default_user }}/.Xinitrc
+
+- name: Copy conf files
+  synchronize: src=files/*.conf dest=/etc/X11/xorg.conf.d/
