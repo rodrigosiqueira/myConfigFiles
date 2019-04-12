@@ -71,5 +71,17 @@
 - name: Fabulous Pacgraph
   pacman: name=pacgraph state=latest
 
+# I added this package because of the "errno" program. I really like: errno -l
+- name: A collection of the unix tools that nobody thought to write thirty years ago
+  pacman: name=moreutils state=latest
+
+# pkgfile --update; pkgfile -s <FILE>
+- name: A pacman .files metadata explorer
+  pacman: name=pkgfile state=latest
+
+# Very useful and clean power manager
+- name: Power manager for Xfce desktop
+  pacman: name=xfce4-power-manager state=latest
+
 - name: My default background
   synchronize: src=files/space_invader.png dest=/home/{{ default_user }}/.config/

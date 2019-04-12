@@ -7,3 +7,15 @@
 
 - name: Install youtube-dl (Download youtube videos)
   pacman: name=youtube-dl state=latest
+
+# A very useful screen recorder
+- name: A feature-rich screen recorder that supports X11 and OpenGL
+  pacman: name=simplescreenrecorder state=latest
+
+# A very simple and useful video editor
+- name: An open-source, non-linear video editor for Linux based on MLT framework
+  pacman: name=openshot state=latest
+
+# Application that helps me to control my input/output devices
+- name: PulseAudio Volume Control
+  pacman: name=pavucontrol state=latest

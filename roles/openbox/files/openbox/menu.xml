@@ -135,6 +135,19 @@
       <command>audacity</command>
     </action>
   </item>
+
+	<item label="OpenShot">
+    <action name="Execute">
+      <command>openshot-qt</command>
+    </action>
+  </item>
+
+	<item label="Pavucontrol">
+    <action name="Execute">
+      <command>pavucontrol</command>
+    </action>
+  </item>
+
 </menu>
 
 <menu id="apps-fileman-menu" label="File Managers">
@@ -181,6 +194,14 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Simple Screen Recorder">
+    <action name="Execute">
+      <command>simplescreenrecorder</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
 </menu>
 
 <menu id="study-menu" label="Study">
@@ -202,9 +223,30 @@
 </menu>
 
 <menu id="miscellaneous-menu" label="Miscellaneous">
+  <item label="Visual Game Boy">
+    <action name="Execute">
+      <command>visualboyadvance-m</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+
+  <item label="Master PDF editor">
+    <action name="Execute">
+      <command>masterpdfeditor4</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+
   <item label="Android file transfer">
     <action name="Execute">
       <command>android-file-transfer</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+
+  <item label="Hexchat">
+    <action name="Execute">
+      <command>hexchat</command>
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
