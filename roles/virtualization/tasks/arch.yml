@@ -1,0 +1,14 @@
+---
+- name: Install virtualization packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - libvirt
+      - qemu
+      - qemu-arch-extra
+      - virt-manager
+      - samba
+      - cifs-utils
+      - openssh

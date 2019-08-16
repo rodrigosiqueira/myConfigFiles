@@ -1,12 +1,3 @@
 ---
-- name: Samba (share folder with qemu)
-  pacman: name=samba state=latest
-
-- name: Libvirt
-  pacman: name=libvirt state=latest
-
-- name: Qemu
-  pacman: name=qemu state=latest
-
-- name: Managing virtual machine
-  pacman: name=virt-manager state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'
