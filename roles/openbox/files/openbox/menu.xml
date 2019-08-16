@@ -12,51 +12,6 @@
     </action>
   </item>
 
-  <item label="Mysql-workbench">
-    <action name="Execute">
-      <command>mysql-workbench</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-
-  <item label="Astah">
-    <action name="Execute">
-      <command>astah</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-
-  <item label="ArgoUML">
-    <action name="Execute">
-      <command>argouml</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-
-  <item label="Genymotion">
-    <action name="Execute">
-      <command>genymotion</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-
-  <item label="Pencil">
-    <action name="Execute">
-      <command>pencil</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-  </item>
-
 </menu>
 
 <menu id="apps-term-menu" label="Terminals">

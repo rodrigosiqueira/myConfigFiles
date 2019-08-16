@@ -1,0 +1,10 @@
+- name: Openbox required packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - openbox
+      - obconf
+      - orage
+      - network-manager-applet
