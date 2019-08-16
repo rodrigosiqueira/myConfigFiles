@@ -1,0 +1,24 @@
+---
+- name: Install git
+  package:
+    name: git
+    state: latest
+
+- name: Generate symbolic links for git prompt
+  file:
+    src: /usr/share/git/git-prompt.sh
+    dest: /home/{{ item.username }}/.config/git-prompt.sh
+    state: link
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
+
+- name: Generate symbolic links for git completition
+  file:
+    src: /usr/share/git/completion/git-completion.bash
+    dest: /home/{{ item.username }}/.config/git-completion.bash
+    state: link
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
+

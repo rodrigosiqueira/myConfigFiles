@@ -1,3 +1,48 @@
 ---
-- name: Git information on terminal ({{ default_user }})
-  synchronize: src=files/ dest=/home/{{ default_user }}/.config/
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'
+
+- name: Insert git-prompt path inside bashrc
+  lineinfile:
+    path: /home/{{ item.username }}/.bashrc
+    line: '# Git magic configs'
+  with_items: "{{ users }}"
+
+- name: Insert git-prompt path inside bashrc
+  lineinfile:
+    path: /home/{{ item.username }}/.bashrc
+    line: 'source ~/.config/git-prompt.sh'
+  with_items: "{{ users }}"
+
+- name: Insert git-completition path inside bashrc
+  lineinfile:
+    path: /home/{{ item.username }}/.bashrc
+    line: 'source ~/.config/git-completion.bash'
+  with_items: "{{ users }}"
+
+- name: Set a global name
+  git_config:
+    name: user.name
+    scope: global
+    value: "{{ item.full_name }}"
+  with_items: "{{ users }}"
+  become: yes
+  become_user: "{{ item.username }}"
+
+- name: Set a global email
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ item.email }}"
+  with_items: "{{ users }}"
+  become: yes
+  become_user: "{{ item.username }}"
+
+- name: Set a vim as a global editor
+  git_config:
+    name: core.editor
+    scope: global
+    value: vim
+  with_items: "{{ users }}"
+  become: yes
+  become_user: "{{ item.username }}"
