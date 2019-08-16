@@ -1,0 +1,28 @@
+- name: Update system
+  pacman: update_cache=yes upgrade=yes
+
+- name: Install common packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - lxterminal
+      - rsync
+      - xterm
+      - firefox
+      - alsa-utils
+      - curl
+      - wget
+      - screen
+      - redshift
+      - feh
+      - xmlto
+      - docbook-xsl
+      - kmod
+      - inetutils
+      - pacgraph
+      - pkgfile # pkgfile --update; pkgfile -s <FILE>
+      - xfce4-power-manager
+      - vim
+      - xorg-xinit
