@@ -1,21 +1,3 @@
 ---
-- name: Install mpg123 (my favorite music player)
-  pacman: name=mpg123 state=latest
-
-- name: Install vlc (Video player)
-  pacman: name=vlc state=latest
-
-- name: Install youtube-dl (Download youtube videos)
-  pacman: name=youtube-dl state=latest
-
-# A very useful screen recorder
-- name: A feature-rich screen recorder that supports X11 and OpenGL
-  pacman: name=simplescreenrecorder state=latest
-
-# A very simple and useful video editor
-- name: An open-source, non-linear video editor for Linux based on MLT framework
-  pacman: name=openshot state=latest
-
-# Application that helps me to control my input/output devices
-- name: PulseAudio Volume Control
-  pacman: name=pavucontrol state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'

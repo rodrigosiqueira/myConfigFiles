@@ -1,6 +1,3 @@
 ---
-- name: Install gv
-  pacman: name=gv state=latest
-
-- name: Install okular
-  pacman: name=okular state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'

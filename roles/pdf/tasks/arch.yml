@@ -1,0 +1,9 @@
+- name: Install pdf files
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - gv
+      - okular
+

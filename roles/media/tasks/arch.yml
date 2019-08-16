@@ -1,0 +1,12 @@
+- name: Install media packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - mpg123
+      - vlc
+      - simplescreenrecorder
+      - pavucontrol # Helps me to control my input/output devices
+      #- openshot # A very simple and useful video editor
+      #- youtube-dl
