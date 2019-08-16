@@ -1,3 +1,6 @@
 ---
-- name: Copy all fonts and themes ({{ default_user }})
-  synchronize: src=files/ dest=/home/{{ default_user }}/
+- name: Set favorite fonts
+  synchronize: src=files/ dest=/home/{{ item.username }}/
+  with_items: "{{ users }}"
+  become: yes
+  become_user: "{{ item.username }}"
