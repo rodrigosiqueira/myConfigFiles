@@ -1,18 +1,6 @@
 ---
-- name: A Kernel-based automounter for Linux
-  pacman: name=autofs state=latest
-
-- name: Virtual filesystem implementation for GIO
-  pacman: name=gvfs state=latest
-
-- name: Install thunar-volman (Management of removeable devices)
-  pacman: name=thunar-volman state=latest
-
-- name: Install udisk2 (Disk manager service)
-  pacman: name=udisks2 state=latest
-
-- name: Install thunar-volman (Management of removeable devices)
-  pacman: name=ntfs-3g state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'
 
 # Usually not required
 #- name: Copy udev rules
