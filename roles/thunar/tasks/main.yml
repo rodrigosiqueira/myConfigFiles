@@ -1,28 +1,21 @@
 ---
-- name: Install Thunar
-  pacman: name=thunar state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'
 
-- name: Install Tumbler (thumbnails)
-  pacman: name=tumbler state=latest
+- name: Geral gtkrc file
+  synchronize:
+    src: files/.gtkrc-2.0
+    dest: /home/{{ item.username }}/
+  with_items: "{{ users }}"
 
-- name: Install thunar-volman (Management of removeable devices)
-  pacman: name=thunar-volman state=latest
+- name: Specific gtkrc
+  synchronize:
+    src: files/.gtkrc-2.0.mine
+    dest: /home/{{ item.username }}/
+  with_items: "{{ users }}"
 
-- name: Install create and modify archives
-  pacman: name=file-roller state=latest
-
-- name: Install lxappearance
-  pacman: name=lxappearance state=latest
-
-- name: Install lxappearance
-  pacman: name=thunar-archive-plugin state=latest
-
-- name: Geral gtkrc file ({{ default_user }})
-  synchronize: src=files/.gtkrc-2.0 dest=/home/{{ default_user }}/
-
-- name: Specific gtkrc ({{ default_user }})
-  synchronize: src=files/.gtkrc-2.0.mine dest=/home/{{ default_user }}/
-
-- name: Copy all icons config ({{ default_user }})
-  synchronize: src=files/ dest=/home/{{ default_user }}/.config/
-
+- name: Copy all icons config
+  synchronize:
+    src: files/
+    dest: /home/{{ item.username }}/.config/
+  with_items: "{{ users }}"
