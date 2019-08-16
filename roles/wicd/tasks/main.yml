@@ -1,6 +1,0 @@
----
-- name: Copying eduroam template configuration
-  synchronize: src=files/ dest=/etc/wicd/encryption/templates/
-
-- name: Update active list by adding eduroam
-  lineinfile: dest=/etc/wicd/encryption/templates/active line="eduroam"

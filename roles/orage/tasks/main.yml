@@ -1,6 +1,0 @@
----
-- name: Install orage
-  pacman: name=orage state=latest
-
-- name: My bash config file ({{ default_user }})
-  synchronize: src=files/ dest=/home/{{ default_user }}/.config/orage/

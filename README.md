@@ -22,5 +22,5 @@ sudo make
 > Just run:
 
 ```
-sudo ansible-playbook atma.yml --connection=local
+sudo ansible-playbook atma.yml
 ```

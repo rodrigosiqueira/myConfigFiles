@@ -1,24 +1,21 @@
 ---
-- hosts: local
-  vars:
-    default_user: siqueira
+- hosts: localhost
   connection: local
   roles:
     - common
     - bash
-    - X
-    - basic_developer
-    - graphics
-    - openbox
     - git
-    - theme_font
+    - basic_dev_env
+    - X
+    - openbox
+    - font
+    - graphics_tools
+    - tint2
     - thunar
     - automount_external_devices
-    - tint2
     - pdf
-    - orage
-#    - latex
     - media
-    - sdl2
     - virtualization
-    - cellphone
+#    - sdl2
+#    - cellphone
+#    - latex
