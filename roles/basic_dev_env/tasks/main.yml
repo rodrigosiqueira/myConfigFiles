@@ -1,6 +1,3 @@
 ---
-- name: Install geany
-  pacman: name=geany state=latest
-
-#- name: Install MySql Workbench
-#  pacman: name=mysql-workbench state=latest
+- include: arch.yml
+  when: ansible_os_family == 'Archlinux'
