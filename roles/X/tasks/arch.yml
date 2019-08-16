@@ -1,0 +1,10 @@
+- name: Install common packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - xorg
+      - xorg-xinit
+      - xorg-font-util
+      - xorg-fonts-misc
