@@ -3,7 +3,7 @@
   when: ansible_os_family == 'Archlinux'
 
 - name: Create configure folder
-  file: path=/home/{{ item.username }}/ state=directory mode=0755
+  file: path=/home/{{ item.username }}/.config/ state=directory mode=0755
   with_items: "{{ users }}"
 
 - name: My default background

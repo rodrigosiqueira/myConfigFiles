@@ -1,0 +1,4 @@
+---
+- name: Bash config file for a common user
+  synchronize: src=files/ dest=/home/{{ item.username }}/
+  with_items: "{{ users }}"

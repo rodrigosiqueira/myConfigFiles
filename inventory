@@ -1,1 +1,5 @@
-local ansible_host=127.0.0.1
+[local]
+localhost
+
+[test_machine]
+<IP_HERE>
