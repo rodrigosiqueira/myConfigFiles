@@ -2,4 +2,6 @@
 - hosts: localhost
   connection: local
   roles:
-    - my_default_git_project
+    - my_misc_git_project
+    - igt_project
+    - kernels_repos
