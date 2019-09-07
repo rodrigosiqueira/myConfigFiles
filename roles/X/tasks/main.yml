@@ -2,6 +2,9 @@
 - include: arch.yml
   when: ansible_os_family == 'Archlinux'
 
+- include: debian.yml
+  when: ansible_os_family == 'Debian'
+
 - name: My Xresources
   synchronize: src=files/.Xresources dest=/home/{{ item.username }}/.Xresources
   with_items: "{{ users }}"

@@ -1,0 +1,42 @@
+- name: Install common packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - gcc
+      - flex
+      - bison
+      - pkg-config
+      - libpciaccess
+      - kmod
+      - procps-ng
+      - libunwind
+      - libdwarf
+      - zlib
+      - xz
+      - cairo
+      - pixman
+      - libudev0-shim
+      - gsl
+      - alsa-lib
+      - xmlrpc-c
+      - json-c
+      - curl
+      - libxrandr
+      - libxv
+      - xorgproto
+      - python-docutils
+      - valgrind
+      - peg
+      - meson
+      - libdrm
+      - libtool
+      - make
+      - autoconf
+      - automake
+      - gtk-doc
+      - python-docutils
+      - git
+      - vim
+      - sudo

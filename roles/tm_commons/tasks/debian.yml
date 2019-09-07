@@ -1,8 +1,9 @@
+---
 - name: Update system
-  pacman: update_cache=yes upgrade=yes
+  apt: update_cache=yes upgrade=yes
 
-- name: Install common packages
-  package:
+- name: Install required packages
+  apt:
     name: "{{ packages }}"
     state: latest
   vars:
@@ -12,8 +13,10 @@
       - wget
       - screen
       - kmod
-      - inetutils
+      - inetutils-tools
       - net-tools # netstat and related stuff
       - vim
       - git
+      - rng-tools
+      - haveged # TODO: we have to enable it, create a task for setup it
       - colordiff

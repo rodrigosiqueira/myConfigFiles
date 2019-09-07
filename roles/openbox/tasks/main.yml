@@ -2,6 +2,9 @@
 - include: arch.yml
   when: ansible_os_family == 'Archlinux'
 
+- include: debian.yml
+  when: ansible_os_family == 'Debian'
+
 # I added the condition of only copy the file if there is no file already.
 # However, this is not a good idea all of the time; keep in mind that during
 # the configuration process you may want to manually remove the files under

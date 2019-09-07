@@ -1,8 +1,8 @@
 - name: Update system
-  pacman: update_cache=yes upgrade=yes
+  apt: update_cache=yes upgrade=yes
 
-- name: Install common packages
-  package:
+- name: Install required packages
+  apt:
     name: "{{ packages }}"
     state: latest
   vars:
@@ -20,12 +20,11 @@
       - xmlto
       - docbook-xsl
       - kmod
-      - inetutils
-      - pacgraph
-      - pkgfile # pkgfile --update; pkgfile -s <FILE>
+      - inetutils-tools
       - xfce4-power-manager
       - vim
-      - xorg-xinit
+      - xorg
+      - xserver-xorg-core
       - net-tools # netstat and related stuff
       - rng-tools
       - haveged # TODO: we have to enable it, create a task for setup it
@@ -33,3 +32,4 @@
       - abook
       - lshw
       - htop
+      - sudo

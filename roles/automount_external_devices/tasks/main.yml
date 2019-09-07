@@ -2,6 +2,9 @@
 - include: arch.yml
   when: ansible_os_family == 'Archlinux'
 
+- include: arch.yml
+  when: ansible_os_family == 'Debian'
+
 # Usually not required
 #- name: Copy udev rules
 #  synchronize: src=files/99-udisks2.rules dest=/etc/udev/rules.d/

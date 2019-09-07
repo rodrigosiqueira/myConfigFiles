@@ -1,14 +1,15 @@
 ---
 - name: Install virtualization packages
-  pacman:
+  apt:
     name: "{{ packages }}"
     state: latest
   vars:
     packages:
-      - libvirt
+      - libvirt-dev
       - qemu
-      - qemu-arch-extra
+      - qemu-utils
       - virt-manager
       - samba
       - cifs-utils
-      - openssh
+      - ssh
+      - qemu-kvm

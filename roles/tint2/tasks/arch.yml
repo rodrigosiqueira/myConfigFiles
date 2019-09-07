@@ -1,3 +1,3 @@
 ---
 - name: Install tint2
-  pacman: name=tint2 state=latest
+  package: name=tint2 state=latest
