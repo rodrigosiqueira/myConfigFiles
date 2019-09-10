@@ -9,6 +9,7 @@
       - qemu
       - qemu-arch-extra
       - virt-manager
+      - virt-viewer
       - samba
       - cifs-utils
       - openssh
