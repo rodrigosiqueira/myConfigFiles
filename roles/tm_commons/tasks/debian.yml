@@ -20,3 +20,4 @@
       - rng-tools
       - haveged # TODO: we have to enable it, create a task for setup it
       - colordiff
+      - sudo

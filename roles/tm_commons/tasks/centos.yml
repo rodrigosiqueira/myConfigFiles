@@ -1,0 +1,48 @@
+---
+- name: Add EPEL repository
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+
+- name: Import CentOS Official
+  rpm_key:
+    state: present
+    key: https://www.centos.org/keys/RPM-GPG-KEY-CentOS-Official
+
+- name: Import Epel key
+  rpm_key:
+    state: present
+    key: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+
+- name: upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: Install required packages
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - rsync
+      - curl
+      - wget
+      - screen
+      - kmod
+      - net-tools # netstat and related stuff
+      - vim
+      - git
+      - rng-tools
+      - haveged # TODO: we have to enable it, create a task for setup it
+      - colordiff
+      - sudo
+
+# TODO: Note that I hard coded ifcfg-enp3s0, probably this is a bad idea but
+# I don't have time now for handling this issue.
+- name: Enable dhcp client on boot
+  lineinfile:
+    path: /etc/sysconfig/network-scripts/ifcfg-enp3s0
+    regexp: '^ONBOOT='
+    line: ONBOOT=yes
