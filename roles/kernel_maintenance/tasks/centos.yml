@@ -1,0 +1,98 @@
+---
+- name: Install required packages
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - kernel-devel
+      - rpm-build
+      - redhat-rpm-config
+      - asciidoc
+      - hmaccalc
+      - perl-ExtUtils-Embed
+      - pesign
+      - xmlto
+      - audit-libs-devel
+      - binutils-devel
+      - elfutils-devel
+      - elfutils-libelf-devel
+      - ncurses-devel
+      - newt-devel
+      - numactl-devel
+      - pciutils-devel
+      - python-devel
+      - zlib-devel
+      - ncurses-devel
+      - qt-devel
+      - hmaccalc
+      - zlib-devel
+      - binutils-devel
+      - elfutils-libelf-devel
+
+- name: Create 'rpmbuild' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/BUILD' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/BUILD
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/BUILDROOT' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/BUILDROOT
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/RPMS' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/RPMS
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/SOURCES' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/SOURCES
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/SPECS' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/SPECS
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Create 'rpmbuild/SRPMS' directory
+  file:
+    path: /home/{{ item.username }}/rpmbuild/SRPMS
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    mode: 0755
+    state: directory
+  with_items: "{{ users }}"
+
+- name: Copy '.rpmmacros'
+  synchronize: src=files/rpmmacros dest=/home/{{ item.username }}/.rpmmacros
+  with_items: "{{ users }}"
