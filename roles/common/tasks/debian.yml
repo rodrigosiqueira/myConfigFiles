@@ -33,3 +33,4 @@
       - lshw
       - htop
       - sudo
+      - ansible
