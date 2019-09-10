@@ -30,7 +30,7 @@
 
 - name: FREEDESKTOP Clonning libdrm
   git:
-    repo: https://gitlab.freedesktop.org/mesa/drm
+    repo: https://gitlab.freedesktop.org/mesa/drm.git
     dest: /home/{{ item.username }}/Documents/Repositories/freedesktop/libdrm
   with_items: "{{ users }}"
   become: yes
