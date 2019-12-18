@@ -2,7 +2,7 @@
 - include: arch.yml
   when: ansible_os_family == 'Archlinux'
 
-- include: arch.yml
+- include: debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Geral gtkrc file

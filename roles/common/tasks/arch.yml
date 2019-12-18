@@ -12,6 +12,7 @@
       - xterm
       - firefox
       - alsa-utils
+      - alsa-plugins
       - curl
       - wget
       - screen
@@ -34,3 +35,5 @@
       - lshw
       - htop
       - ansible
+      - zim
+      - xpad

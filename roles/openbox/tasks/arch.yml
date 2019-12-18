@@ -11,4 +11,4 @@
       - dunst # lightweight tool for notification
       - i3lock
       - conky
-      - xfce4-power-manager-settings
+      - xfce4-power-manager

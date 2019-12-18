@@ -1,4 +1,15 @@
 ---
+- name: Install common packages
+  package:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - gcc
+      - flex
+      - bison
+      - codespell
+
 - name: Create 'Repositories' directory
   file:
     path: /home/{{ item.username }}/Documents/Repositories/

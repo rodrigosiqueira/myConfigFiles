@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
-  connection: local
+  user: siqueira
+  become: yes
   roles:
     - common
     - bash
@@ -16,6 +17,10 @@
     - pdf
     - media
     - virtualization
-#    - sdl2
-#    - cellphone
-#    - latex
+    - my_misc_git_project
+    - build_env_graphics
+    - kernels_repos
+    - igt_project
+    - sdl2
+    - cellphone
+    - latex

@@ -1,5 +1,5 @@
 - name: Install common packages
-  package:
+  pacman:
     name: "{{ packages }}"
     state: latest
   vars:

@@ -1,0 +1,14 @@
+- name: Install common packages
+  apt:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - thunar
+      - tumbler
+      - thunar-volman # Managing of removable devices
+      - file-roller
+      - lxappearance
+      - thunar-archive-plugin
+      - gvfs
+      - gvfs-backends
