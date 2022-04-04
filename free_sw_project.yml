@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  connection: local
-  roles:
-    - my_misc_git_project
-    - igt_project
-    - kernels_repos

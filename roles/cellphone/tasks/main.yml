@@ -1,6 +1,0 @@
----
-- name: MTP lib
-  pacman: name=libmtp state=latest
-
-- name: Android file transfer minimal UI
-  pacman: name=android-file-transfer state=latest

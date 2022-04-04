@@ -1,3 +1,0 @@
----
-- name: Install tint2
-  package: name=tint2 state=latest

@@ -1,6 +1,0 @@
----
-- name: Set favorite fonts
-  synchronize: src=files/ dest=/home/{{ item.username }}/
-  with_items: "{{ users }}"
-  become: yes
-  become_user: "{{ item.username }}"

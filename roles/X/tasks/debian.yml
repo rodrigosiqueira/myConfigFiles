@@ -1,9 +1,0 @@
----
-# TODO: This file is very similar to the Arch linux. Probably we can merge it
-- name: Install common packages
-  package:
-    name: "{{ packages }}"
-    state: latest
-  vars:
-    packages:
-      - xorg
