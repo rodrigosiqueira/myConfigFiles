@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/siqueira/Documents/Repositories/kernels/drm'
+let g:netrw_dirhist_6='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates/x86-64'
+let g:netrw_dirhist_5='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates/rpi4-raspbian-64-cross-x86-arm'
+let g:netrw_dirhist_4='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates/rpi4-raspbian-32-cross-x86-arm'
+let g:netrw_dirhist_3='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates'
+let g:netrw_dirhist_2='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates/rpi4-raspbian-32-cross-x86-arm'
+let g:netrw_dirhist_1='/home/siqueira/Documents/Repositories/kw/kworkflow/etc/init_templates'
+let g:netrw_dirhist_0='/home/siqueira/Documents/Repositories/kw/kworkflow/src'
+let g:netrw_dirhist_9='/home/siqueira/Documents/Repositories/kw/kworkflow'
+let g:netrw_dirhist_8='/home/siqueira/Documents/Repositories/kw/kworkflow/documentation/dependencies'
