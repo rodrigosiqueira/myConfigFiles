@@ -72,7 +72,7 @@ declare -a arch_packages=(
   'bison'
   'flex'
   'openssl'
-  'ncurse'
+  'ncurses'
   'pahole'
   'base-devel'
   'xmlto'
