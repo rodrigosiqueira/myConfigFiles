@@ -14,8 +14,11 @@ fi
 
 include 'packages/setup.sh'
 include 'vim/setup.sh'
-include 'repositories/setup.sh'
+include 'yubi/setup.sh'
+include 'keepassxc/setup.sh'
 include 'bash/setup.sh'
 include 'git/setup.sh'
 include 'rvm/setup.sh'
 include 'breeze/setup.sh'
+
+include 'repositories/setup.sh'
