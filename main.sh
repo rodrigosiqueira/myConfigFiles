@@ -20,5 +20,6 @@ include 'bash/setup.sh'
 include 'git/setup.sh'
 include 'rvm/setup.sh'
 include 'breeze/setup.sh'
+include 'neomutt/setup.sh'
 
 include 'repositories/setup.sh'

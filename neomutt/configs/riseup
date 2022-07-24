@@ -1,0 +1,26 @@
+# Account
+set realname  = 'Rodrigo Siqueira'
+set from      = siqueirajordao@riseup.net
+
+# Send
+set smtp_url  = smtps://$imap_user@mail.riseup.net/
+set smtp_pass = $imap_pass
+
+# Connection
+set ssl_force_tls = yes
+set ssl_starttls  = yes
+
+# Folder
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record    = +Sent
+
+# Receive
+set imap_user = siqueirajordao@riseup.net
+set folder    = imaps://siqueirajordao@mail.riseup.net/
+set imap_check_subscribed
+
+# Folder
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record    = +Sent
