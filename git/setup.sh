@@ -2,6 +2,7 @@
 git config --global user.name 'Rodrigo Siqueira'
 git config --global user.email 'siqueirajordao@riseup.net'
 git config --global core.editor vim
+git config --global commit.verbose true
 
 # Autocomplete
 if [[ "${TARGET_DISTRO}" == 'arch' ]]; then
