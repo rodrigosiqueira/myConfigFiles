@@ -68,6 +68,13 @@ declare -a arch_packages=(
   'libx11'
   'linux-api-headers'
   'glib2'
+  # Sound and other
+  'pipewire'
+  'pipewire-pulse'
+  'wireplumber'
+  'bluez'
+  'bluez-utils'
+  'reflector'
   # Kernel packages
   'bison'
   'flex'
