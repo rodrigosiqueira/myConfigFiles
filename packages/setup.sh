@@ -124,6 +124,7 @@ declare -a debian_packages=(
   'openconnect'
   'thunderbird'
   'ruby-notify'
+  'peek'
   # IGT
   'pkg-config'
   'x11proto-dri2-dev'
@@ -155,6 +156,7 @@ declare -a debian_packages=(
   'samba-common'
   'qemu-system-x86'
   # Kernel packages
+  'exuberant-ctags'
   'build-essential'
   'xmlto'
   'kmod'
