@@ -160,6 +160,9 @@ declare -a debian_packages=(
   'libssl-dev'
   'libncurses-dev'
   'dwarves'
+  'clang'
+  'lld'
+  'llvm'
   #'inetutils'
   'bc'
   'libelf-dev'
@@ -167,6 +170,18 @@ declare -a debian_packages=(
   'perl'
   'tar'
   'xz-utils'
+  # Ruby
+  'gawk'
+  'autoconf'
+  'automake'
+  'libgdbm-dev'
+  'libncurses5-dev'
+  'libsqlite3-dev'
+  'libtool'
+  'libyaml-dev'
+  'libgmp-dev'
+  'libreadline6-dev'
+  'cmake'
 )
 
 install_packages "${TARGET_DISTRO}"_packages "${PACKAGE_MANAGER}"
