@@ -23,3 +23,7 @@ include 'breeze/setup.sh'
 include 'neomutt/setup.sh'
 
 include 'repositories/setup.sh'
+
+if [[ "$TARGET_DISTRO" == 'arch' ]]; then
+  include 'yay/setup.sh'
+fi
