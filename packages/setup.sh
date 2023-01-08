@@ -75,6 +75,9 @@ declare -a arch_packages=(
   'bluez'
   'bluez-utils'
   'reflector'
+  # Bluetooh
+  'bluez'
+  'bluez-utils'
   # Kernel packages
   'bison'
   'flex'
