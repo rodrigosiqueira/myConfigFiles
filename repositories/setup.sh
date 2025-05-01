@@ -3,6 +3,7 @@ REPOS="${HOME}/Documents/Repositories"
 declare -a other_projects=(
   'https://github.com/webfolder/siqueira.tech'
   'https://github.com/rodrigosiqueira/myConfigFiles.git'
+  'https://gitlab.freedesktop.org/tomstdenis/umr.git'
 )
 
 declare -a kw_repos=(
@@ -12,13 +13,15 @@ declare -a kw_repos=(
 )
 
 declare -a kernel_repos=(
-  'https://anongit.freedesktop.org/git/drm/drm-misc.git'
+  'https://gitlab.freedesktop.org/agd5f/linux.git'
+  'https://github.com/torvalds/linux.git'
+  'https://gitlab.com/kernel-firmware/linux-firmware.git'
   'https://github.com/raspberrypi/linux.git'
 )
 
 declare -a freedesktop_repos=(
   'https://gitlab.freedesktop.org/mesa/drm'
-
+  'https://gitlab.freedesktop.org/drm/igt-gpu-tools.git'
 )
 
 function clone_project_to()

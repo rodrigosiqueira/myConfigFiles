@@ -1,5 +1,7 @@
 # ArchLinux package names
 declare -a arch_packages=(
+  'ncal'
+  'ghostwriter'
   'rsync'
   'wget'
   'vim'
@@ -17,7 +19,6 @@ declare -a arch_packages=(
   'lzop'
   'zstd'
   'mpg123'
-  'man'
   'man-db'
   'chromium'
   'firefox'
@@ -97,6 +98,8 @@ declare -a arch_packages=(
 )
 
 declare -a debian_packages=(
+  'ghostwriter'
+  'abook'
   'rsync'
   'wget'
   'vim'
@@ -125,6 +128,15 @@ declare -a debian_packages=(
   'thunderbird'
   'ruby-notify'
   'peek'
+  'curl'
+  # Tex
+  'latexmk'
+  'texlive-fonts-extra'
+  # umr
+  'llvm-dev'
+  'libsdl2-dev'
+  'libnanomsg-dev'
+  'libgl1-mesa-dev'
   # IGT
   'pkg-config'
   'x11proto-dri2-dev'
@@ -133,7 +145,7 @@ declare -a debian_packages=(
   'peg'
   'libpciaccess-dev'
   'libkmod-dev'
-  'libprocps-dev'
+  'libproc2-dev'
   'libunwind-dev'
   'libdw-dev'
   'zlib1g-dev'
@@ -180,12 +192,12 @@ declare -a debian_packages=(
   'autoconf'
   'automake'
   'libgdbm-dev'
-  'libncurses5-dev'
+  'libncurses-dev'
   'libsqlite3-dev'
   'libtool'
   'libyaml-dev'
   'libgmp-dev'
-  'libreadline6-dev'
+  'libreadline-dev'
   'cmake'
 )
 
