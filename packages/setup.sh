@@ -29,6 +29,14 @@ declare -a arch_packages=(
   # VMs
   'samba'
   'qemu'
+  # umr
+  'llvm'
+  'sdl2'
+  'nanomsg'
+  'cmake'
+  'ncurses'
+  'egl-gbm'
+  'libglvnd'
   # IGT
   'flex'
   'bison'
@@ -108,6 +116,7 @@ declare -a debian_packages=(
   'konsole'
   'libreoffice'
   'okular'
+  'pdfmixtool' # Edit pdf
   'zim'
   'openconnect'
   'screen'
@@ -129,6 +138,9 @@ declare -a debian_packages=(
   'ruby-notify'
   'peek'
   'curl'
+  'elinks'
+  'shunit2'
+  'moreutils' # errno
   # Tex
   'latexmk'
   'texlive-fonts-extra'
@@ -180,6 +192,7 @@ declare -a debian_packages=(
   'clang'
   'lld'
   'llvm'
+  'elfutils'
   #'inetutils'
   'bc'
   'libelf-dev'
